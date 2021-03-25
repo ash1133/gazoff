@@ -1,0 +1,41 @@
+.btn_default{
+  background-color: $c_blue;
+  border: 1px solid $c_blue;
+  text-align:center;
+  padding:5px 25px;
+  border-radius: 3px;
+  color: $c_white;
+  transition: background-color linear .2s, color linear .2s;
+  text-decoration:none;
+  display: inline-block;
+
+
+  &:hover, &:focus{
+    text-decoration:none;
+    background-color: $c_white;
+    color: $c_blue;
+  }
+}
+.btn_bordered{
+  background-color: transparent;
+  border: 1px solid $c_border_default;
+  text-align:center;
+  padding:5px 15px;
+  border-radius: 3px;
+  color: $c_blue;
+  transition: background-color linear .2s, color linear .2s, border-color linear .2s;
+  text-decoration:none;
+  display: inline-block;
+
+
+  &:hover, &:focus{
+    text-decoration:none;
+    border-color:$c_blue;
+    background-color: $c_blue;
+    color: $c_white;
+  }
+}
+
+.btn_lg{
+  padding:15px 30px;
+}

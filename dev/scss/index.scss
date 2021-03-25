@@ -1,0 +1,21 @@
+@import "params";
+@import "global";
+@import "btn";
+@import "typography";
+
+@import "catalog/section.list";
+@import "catalog/item";
+
+@import "header/header";
+@import "header/menu";
+
+@import "index/pluses";
+@import "index/catalog";
+@import "index/spec";
+@import "index/news";
+@import "index/consultation";
+@import "index/steps";
+
+@import "footer/map";
+@import "footer/footer";
+@import "footer/ofert";

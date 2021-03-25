@@ -1,0 +1,121 @@
+.b-header{
+  border-top: 2px solid $c_azure;
+  padding-top:5px;
+
+  & + *{
+    border-top:7px solid $c_blue;
+  }
+}
+.b-header__logo{
+  display: block;
+  width: 100%;
+
+  img{
+    max-width:100%;
+    object-fit: contain;
+  }
+}
+.b-header__phone, .b-header__email, .b-header__address{
+  position: relative;
+  padding-left: 43px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .b-header__c__icon{
+    position: absolute;
+    left:0;
+    content: '';
+    background-color: $c_azure;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+
+    svg{
+      fill: $c_white;
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  a, span{
+    line-height:110%;
+    display: block;
+    flex: 0 0 100%;
+    color: $c_black;
+    font-weight: bold;
+  }
+}
+.b-header__basket{
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration:none;
+
+  &:hover, &:focus{
+    text-decoration:none;
+  }
+
+  .b-header__basket__icon{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+
+    svg{
+      fill:$c_azure;
+      width:35px;
+      height:35px;
+    }
+  }
+  .b-header__basket__title{
+    display: inline-block;
+    font-weight: bold;
+    margin-right:5px;
+    color:$c_black;
+  }
+  .b-header__basket__num{
+    font-weight: bold;
+    color:$c_azure;
+  }
+}
+
+
+.b-header__search{
+  position: relative;
+  width: 100%;
+
+  input{
+    display: block;
+    width: 100%;
+    border:1px solid $c_border_default;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding:4px 30px 4px 10px;
+  }
+
+  button{
+    position: absolute;
+    right:5px;
+    top:48%;
+    transform: translateY(-50%);
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border:0;
+    padding:0;
+
+    svg{
+      width:100%;
+      fill: $c_blue;
+    }
+  }
+}

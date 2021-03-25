@@ -1,0 +1,40 @@
+.b-header__menu__border{
+  border-top: 1px solid $c_border_default;
+}
+.b-header__menu{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  li{
+    flex: auto;
+
+    &>a{
+      font-weight: bold;
+      text-align: center;
+      display: inline-block;
+      padding:10px 10px;
+      color: $c_black;
+      width: 100%;
+      position: relative;
+
+      &:hover, &:focus{
+        color:$c_blue;
+        text-decoration:none;
+
+        &::before{
+          content: '';
+          top:-2px;
+          height:2px;
+          width: 100%;
+          position: absolute;
+          left:0;
+          background-color:$c_blue;
+          display: block;
+        }
+      }
+    }
+  }
+}

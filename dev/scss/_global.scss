@@ -1,0 +1,59 @@
+body{
+  font-family: 'Exo 2', sans-serif;
+  font-size: 14px;
+  margin: 0;
+  color: #2b2a29;
+}
+
+a{
+  text-decoration:none;
+
+  &:hover, &:focus{
+    text-decoration: underline;
+  }
+}
+
+
+.img_cover{
+  object-fit: cover !important;
+}
+.img_contain{
+  object-fit: contain !important;
+}
+.img_h300{
+  width: 100%;
+  height:300px;
+  object-fit: cover;
+}
+.img_h200{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.img_h100{
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.g-title_line{
+  overflow: hidden;
+  &::before {
+    margin-left: -100%;
+  }
+  &::after {
+    margin-right: -100%;
+  }
+  &::before,
+  &::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+    height: 3px;
+    background: #cccccc;
+    border: solid #f2f2f2;
+    border-width: 0 10px;
+  }
+}

@@ -1,0 +1,25 @@
+.b-index-steps{
+  padding:40px 0;
+}
+.b-index-steps__item{}
+.b-index-steps__item__img{
+  width:80%;
+  margin:0 auto -60px;
+
+  img{
+    height:170px;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+.b-index-steps__item__description{
+  border:1px solid $c_border_default;
+  padding:80px 30px 30px;
+  text-align:center;
+}
+.b-index-steps__item__title{
+  font-weight: bold;
+  margin-bottom:15px;
+  font-size:18px;
+}
+.b-index-steps__item__text{}

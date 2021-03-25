@@ -1,0 +1,38 @@
+.b-footer{
+  padding: 15px 0;
+}
+.b-footer__copy{}
+.b-footer__menu{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0 0 15px;
+  padding: 0;
+  border-bottom:1px solid $c_border_default;
+
+
+  li{
+    flex: auto;
+    padding-bottom:15px;
+  }
+  a{
+    display: block;
+    color:$c_black;
+
+    &:hover, &:focus{
+      text-decoration: underline;
+      color:$c_black;
+    }
+  }
+}
+.b-footer__phone{
+  font-weight: bold;
+  margin-right: 15px;
+  font-size:18px;
+  color:$c_blue;
+  display: inline-block;
+
+  &:hover, &:focus{
+    color:$c_blue;
+  }
+}
